@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+.outer-container {
+  margin: 3rem 0;
+  background-color: white;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  padding: 1rem 5rem;
+  font-size: 15px;
+}
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 90vh;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 1rem;
+  width: 30vw;
+}
+.field input {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  margin-top: 0.3rem;
+}
+.field label {
+  font-size: 12px;
+}
+.field button {
+  width: 100%;
+  height: 2rem;
+  border-radius: 5px;
+}
+.forgot {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.continue button {
+  background-color: #2f80ed;
+  border: none;
+  color: #f2f2f2;
+}
+.google {
+  background-color: white;
+  border: 2px solid #f2f2f2;
+  margin-bottom: 1rem;
+}
+.facebook {
+  background-color: #475993;
+  color: white;
+  border: none;
+}
+.register {
+  margin-top: 2rem;
+}
+span {
+  color: #2f80ed;
+}
+
+@media screen and (max-width: 720px) {
+  .sign-in {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: baseline;
+  }
+  .form {
+    width: 100%;
+  }
+  .field {
+    width: 100%;
+  }
+}
